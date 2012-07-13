@@ -17,7 +17,7 @@
             <ul>
             {% load mptt_tags %}
                                 
-            {% full_tree_for_model shop_categories.Category as categorys %}    
+            {% full_tree_for_model shop_example.Category as categorys %}    
             {% recursetree categorys %}
                 <li>
                     <a href="{{ node.get_absolute_url }}">{{ node.name }}</a>
