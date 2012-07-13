@@ -13,7 +13,7 @@ def main():
     args = parser.parse_args()
     new_db = not os.path.exists('shopexampledb.sqlite')
     with temp_dir(prefix='shop-example') as STATIC_ROOT:
-        with temp_dir(prefix='shop-example') as MEDIA_ROOT:
+        with temp_dir(prefix='shop-example-m') as MEDIA_ROOT:
             configure(
                 ROOT_URLCONF='shop_example.urls',
                 STATIC_ROOT=STATIC_ROOT,
