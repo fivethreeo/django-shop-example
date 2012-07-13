@@ -4,3 +4,6 @@ django-shop-categories
 django-mptt
 django-treeadmin
 django-easytests
+PIL
+South
+easy-thumbnails
