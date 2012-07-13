@@ -62,7 +62,6 @@ def configure(**extra):
             'django.contrib.sites',
             'django.contrib.staticfiles',
             'shop',
-            'shop.addressmodel',
             'shop_categories',
             'mptt',
             'treeadmin',
