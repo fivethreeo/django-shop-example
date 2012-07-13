@@ -1,3 +1,5 @@
+from django.conf import settings
+from django.conf.urls.static import static
 from django.conf.urls.defaults import *
 
 # Uncomment the next two lines to enable the admin:
@@ -13,4 +15,4 @@ urlpatterns = patterns('',
     (r'^admin/', include(admin.site.urls)),
     (r'^catalog/', include('shop_categories.urls')),
     (r'^', include('shop.urls')),
-)
+) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
