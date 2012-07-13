@@ -10,7 +10,7 @@
     <body>
         <div id="outer">
             <div id="header">
-                <h1>Shop Example</h1>
+                {% block header %}{% endblock header %}
             </div>
             <div id="left_bar">
                 <h2>Categories</h2>
@@ -34,7 +34,7 @@
             {% block body %}{% endblock body %}    
             </div>
             <div id="footer">
-                <p>Footer</p>
+                {% block footer %}<hr />{% endblock footer %}
             </div>      
         <div>
     </body>

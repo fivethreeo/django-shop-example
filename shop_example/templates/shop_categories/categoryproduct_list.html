@@ -1,7 +1,9 @@
 {% extends "shop/base.html" %}
 
+{% block header %}<h1>Products</h1>{% endblock header %}
+
 {% block body %}
- <p>{{ category }}</p>
+ <p>In category: {{ category }}</p>
   {% for object in object_list %}
   <hr />
   <p><a href="{{ object.get_absolute_url }}">{{object.get_name}}</a>, price: {{object.unit_price}}</p>
