@@ -7,3 +7,4 @@ django-easytests
 PIL
 South
 easy-thumbnails
+django-tinymce

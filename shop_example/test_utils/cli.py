@@ -78,7 +78,9 @@ def configure(**extra):
         ),
         SOUTH_TESTS_MIGRATE = False,
         ROOT_URLCONF = ROOT_URLCONF,
-        SHOP_PRODUCT_MODEL = 'shop_categories.models.defaults.product.default.CategoryProduct',
+        SHOP_PRODUCT_MODEL = 'shop_example.shop_models.product.Product',
+        SHOP_ADDRESS_MODEL = 'shop_example.shop_models.address.Address',
+        SHOP_CATEGORIES_CATEGORY_MODEL = 'shop_example.shop_models.category.Category',
         SHOP_PAYMENT_BACKENDS = [
             'shop.payment.backends.pay_on_delivery.PayOnDeliveryBackend'
         ],
