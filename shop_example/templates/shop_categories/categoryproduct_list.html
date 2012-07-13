@@ -1,0 +1,10 @@
+{% extends "shop/base.html" %}
+
+{% block body %}
+ <p>{{ category }}</p>
+  {% for object in object_list %}
+  <hr />
+  <p><a href="{{ object.get_absolute_url }}">{{object.get_name}}</a>, price: {{object.unit_price}}</p>
+
+  {% endfor %}
+{% endblock %}
