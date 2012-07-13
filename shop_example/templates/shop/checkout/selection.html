@@ -1,0 +1,24 @@
+{% extends "shop/base.html" %}
+
+{% block body %}
+  <h1>Shipping and Billing</h1>
+  <form method="POST">
+  {% csrf_token %}
+  <span style="display: none;">(handle this with js) <input type="checkbox" name="js_enabled" /> Js enabled
+  <input type="checkbox" name="update_only" /> Update only </span>
+  <p>Use zipcode: 7600</p>
+  <h3>Your shipping address</h3>
+  {{ shipping_address.as_p }}
+  <h3>Your billing address</h3>
+  {{ billing_address.as_p }}
+  <h3>Payment and Shipping Methods</h3>
+  {{ billing_shipping_form.as_p }}
+  {% if shipping_choices_form %}
+      {{ shipping_choices_form.as_p }}
+  {% endif %}
+  {% if payment_choices_form %}
+      {{ payment_choices_form.as_p }}
+  {% endif %}
+  <button type="submit">Save</button>
+  </form>
+{% endblock %}

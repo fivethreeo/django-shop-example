@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html { height: 100%; }
+
+body {
+    height: 100%; 
+    background: #ebeaef;
+}
+
+#outer  { width: 940px; margin: 0 auto; }
+
+#header { width: 680px; clear: both; float: right; }
+
+#left_bar { width: 220px; float: left; }
+#right_bar { width: 680px; float: right; }
+
+#footer { width: 680px; clear: both; float: right; }

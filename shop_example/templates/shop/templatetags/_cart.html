@@ -1,0 +1,11 @@
+{% with cart.get_updated_cart_items as cart_items %}
+{% if cart_items %}
+<h2>Cart</h2>
+<p>
+{% for item in cart_items %}
+   {{ item.product.get_name }} x {{ item.quantity }}<br />
+{% endfor %}
+   <a href="{% url cart %}">Total: {{ cart.subtotal_price }},-</a>
+</p>
+{% endif %}
+{% endwith %}

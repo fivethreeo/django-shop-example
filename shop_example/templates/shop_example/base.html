@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{{ LANGUAGE_CODE }}" lang="{{ LANGUAGE_CODE }}" dir="ltr">
+    <head>
+        <title>{% block title %}Shop Example{% endblock title %}</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8" /> 
+        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}shop_example/base.css" />
+        {% block extrahead %}{% endblock extrahead %}
+    </head>
+    
+    <body>
+        <div id="outer">
+            <div id="header">
+                <h1>Shop Example</h1>
+            </div>
+            <div id="left_bar">
+            <ul>
+            {% load mptt_tags %}
+                                
+            {% full_tree_for_model shop_categories.Category as categorys %}    
+            {% recursetree categorys %}
+                <li>
+                    <a href="{{ node.get_absolute_url }}">{{ node.name }}</a>
+                    {% if not node.is_leaf_node %}
+                        <ul class="children">
+                            {{ children }}
+                        </ul>
+                    {% endif %}
+                </li>
+            {% endrecursetree %}
+            </ul>
+            </div>
+            <div id="right_bar">
+            {% block body %}{% endblock body %}    
+            </div>
+            <div id="footer">
+                <p>Footer</p>
+            </div>      
+        <div>
+    </body>
+
+</html>
