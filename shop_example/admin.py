@@ -5,6 +5,7 @@ from shop_categories.admin import ProductCategoryAdmin
 
 class ProductAdmin(admin.ModelAdmin):
     prepopulated_fields = {"slug": ("name",)}
-        
+    exclude = ('path', 'name_path')
+    
 admin.site.register(Category, ProductCategoryAdmin)    
 admin.site.register(Product, ProductAdmin)
