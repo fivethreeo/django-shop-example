@@ -76,7 +76,7 @@ def configure(**extra):
         ),
         SOUTH_TESTS_MIGRATE = False,
         ROOT_URLCONF = ROOT_URLCONF,
-        SHOP_PRODUCT_MODEL = 'shop_categories.models.default.product.default.CategoryProduct'
+        SHOP_PRODUCT_MODEL = 'shop_categories.models.defaults.product.default.CategoryProduct'
     )
     defaults.update(extra)
     settings.configure(**defaults)
