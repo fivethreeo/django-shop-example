@@ -30,6 +30,7 @@ class Country(models.Model):
         return u'%s' % self.name
 
     class Meta(object):
+        app_label = 'shop_example'
         verbose_name = _('Country')
         verbose_name_plural = _('Countries')
 
@@ -50,6 +51,7 @@ class Address(models.Model):
                                 null=True)
 
     class Meta(object):
+        app_label = 'shop_example'
         verbose_name = _('Address')
         verbose_name_plural = _("Addresses")
 
