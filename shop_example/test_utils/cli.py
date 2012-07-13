@@ -78,8 +78,8 @@ def configure(**extra):
         ),
         SOUTH_TESTS_MIGRATE = False,
         ROOT_URLCONF = ROOT_URLCONF,
-        SHOP_PRODUCT_MODEL = ('shop_example.models.product.Product', 'shop_example'),
-        SHOP_ADDRESS_MODEL = ('shop_example.models.address.Address', 'shop_example'),
+        SHOP_PRODUCT_MODEL = 'shop_example.models.product.Product',
+        SHOP_ADDRESS_MODEL = 'shop_example.models.address.Address',
         SHOP_CATEGORIES_CATEGORY_MODEL = 'shop_example.models.category.Category',
         SHOP_PAYMENT_BACKENDS = [
             'shop.payment.backends.pay_on_delivery.PayOnDeliveryBackend'
