@@ -81,7 +81,7 @@ def configure(**extra):
         SHOP_PRODUCT_MODEL = 'shop_categories.models.defaults.product.default.CategoryProduct',
         SHOP_PAYMENT_BACKENDS = [
             'shop.payment.backends.pay_on_delivery.PayOnDeliveryBackend'
-        ]
+        ],
         SHOP_SHIPPING_BACKENDS = [
             'shop.shipping.backends.flat_rate.FlatRateShipping'
         ]        
