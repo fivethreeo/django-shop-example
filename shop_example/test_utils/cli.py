@@ -78,7 +78,13 @@ def configure(**extra):
         ),
         SOUTH_TESTS_MIGRATE = False,
         ROOT_URLCONF = ROOT_URLCONF,
-        SHOP_PRODUCT_MODEL = 'shop_categories.models.defaults.product.default.CategoryProduct'
+        SHOP_PRODUCT_MODEL = 'shop_categories.models.defaults.product.default.CategoryProduct',
+        SHOP_PAYMENT_BACKENDS = [
+            'shop.payment.backends.pay_on_delivery.PayOnDeliveryBackend'
+        ]
+        SHOP_SHIPPING_BACKENDS = [
+            'shop.shipping.backends.flat_rate.FlatRateShipping'
+        ]        
     )
     defaults.update(extra)
     settings.configure(**defaults)
