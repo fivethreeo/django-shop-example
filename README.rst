@@ -8,6 +8,7 @@ How to run
 ----------
 
 ::
+
     git clone https://github.com/fivethreeo/django-shop-example.git
     cd django-shop-example
     virtualenv shop_env
