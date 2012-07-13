@@ -65,7 +65,8 @@ def configure(**extra):
             'shop_categories',
             'mptt',
             'treeadmin',
-            'south'
+            'south',
+            'tinymce'
         ],
         LANGUAGE_CODE = "en",
         LANGUAGES = (
