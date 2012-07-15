@@ -3,7 +3,7 @@ django-shop
 django-shop-categories
 django-mptt
 django-treeadmin
--e git+git://github.com/fivethreeo/django-easytests.git#egg=django-easytests
+django-easytests
 PIL
 South
 easy-thumbnails
