@@ -35,7 +35,7 @@ default_settings.update(dict(
     ]  
 ))
 
-testsetup = TestSetup(appname='djnetaxept', default_settings=default_settings)
+testsetup = TestSetup(appname='shop_example', default_settings=default_settings)
 
 if __name__ == '__main__':
     testsetup.run('shell')
