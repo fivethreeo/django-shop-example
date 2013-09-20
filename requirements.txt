@@ -3,7 +3,7 @@ django-shop
 django-shop-categories
 django-mptt
 django-treeadmin
-django-easytests==0.8.4.beta.0
+django-easytests
 PIL
 South
 easy-thumbnails
