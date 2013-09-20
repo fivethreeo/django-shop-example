@@ -34,4 +34,4 @@ First make sure PIL is available. Then:
     pip install -r requirements.txt
     python runtestserver.py
         
-Point your browser to http://127.0.0.1:8080/
+Point your browser to http://127.0.0.1:8000/
