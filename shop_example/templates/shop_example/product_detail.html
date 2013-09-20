@@ -2,6 +2,8 @@
 
 {% block header %}<h1>Product Info</h1>{% endblock header %}
 
+{% load url from future %}
+
 {% block body %}
   <p>{{ category }}</p>
  
@@ -14,7 +16,7 @@
   
   {{object.body|safe}}
 
-  <form method="post" action="{% url cart %}">{% csrf_token %}
+  <form method="post" action="{% url 'cart' %}">{% csrf_token %}
   <input type="hidden" name="add_item_id" value="{{object.id}}">
   <input type="hidden" name="add_item_quantity" value="1">
   <input type="submit" value="Add to cart">
