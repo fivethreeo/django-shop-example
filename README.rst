@@ -14,11 +14,14 @@ Linux
 
     git clone https://github.com/fivethreeo/django-shop-example.git
     cd django-shop-example
-    virtualenv env
-    source ./env/bin/activate
+    
+    virtualenv shop_env
+    
+    source ./shop_env/bin/activate
     pip install -r requirements.txt
     pip install PIL
     pip uninstall south # fix setup.py issues with 3rdparty for django 1.8
+    
     python manage.py syncdb --no-initial-data
     python manage.py syncdb # to load fixtures with natural keys, fails if tables are not present
     python manage.py runserver --insecure
@@ -33,10 +36,12 @@ First make sure PIL is available. Then:
     git clone https://github.com/fivethreeo/django-shop-example.git
     cd django-shop-example
 
-    virtualenv shop_env --system-site-pakages
+    virtualenv shop_env --system-site-packages
+    
     shop_env\Scripts\activate.bat
     pip install -r requirements.txt
     pip uninstall south # fix setup.py issues with 3rdparty for django 1.8
+    
     python manage.py syncdb --no-initial-data
     python manage.py syncdb # to load fixtures with natural keys, fails if tables are not present
     python manage.py runserver --insecure
