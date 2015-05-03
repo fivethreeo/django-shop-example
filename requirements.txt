@@ -6,5 +6,5 @@ easy-thumbnails
 django-tinymce
 -e git+https://github.com/ojii/django-better-test.git#egg=django-better-test
 -e git+https://github.com/ojii/django-app-manage.git#egg=django-app-manage
--e git+https://github.com/veseloff/django-treeadmin.git#egg=django-treeadmin
+-e git+https://github.com/fivethreeo/django-treeadmin.git#egg=django-treeadmin
 

@@ -6,9 +6,9 @@ if __name__ == '__main__':
     app_manage.main(
         [
             'better_test',
+            'django.contrib.contenttypes',
             'shop_example',
             'django.contrib.auth',
-            'django.contrib.contenttypes',
             'django.contrib.sessions',
             'django.contrib.admin',
             'django.contrib.sites',
