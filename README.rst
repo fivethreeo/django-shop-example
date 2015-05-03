@@ -18,7 +18,7 @@ Linux
     source ./shop_env/bin/activate
     pip install -r requirements.txt
     pip install PIL
-    python runtestserver.py
+    python manage.py runserver --insecure
 
 Windows
 =======
@@ -32,6 +32,6 @@ First make sure PIL is available. Then:
     virtualenv shop_env --system-site-pakages
     shop_env\Scripts\activate.bat
     pip install -r requirements.txt
-    python runtestserver.py
+    python manage.py runserver --insecure
         
 Point your browser to http://127.0.0.1:8000/

@@ -1,9 +1,10 @@
 django
-django-shop
-django-shop-categories
+-e git+https://github.com/divio/django-shop.git#egg=django-shop
+-e git+https://github.com/fivethreeo/django-shop-categories.git#egg=django-shop-categories
 django-mptt
-django-treeadmin
-django-easytests
-South
 easy-thumbnails
 django-tinymce
+-e git+https://github.com/ojii/django-better-test.git#egg=django-better-test
+-e git+https://github.com/ojii/django-app-manage.git#egg=django-app-manage
+-e git+https://github.com/veseloff/django-treeadmin.git#egg=django-treeadmin
+
