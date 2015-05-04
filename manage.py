@@ -5,19 +5,19 @@ import app_manage
 if __name__ == '__main__':
     app_manage.main(
         [
-            'better_test',
-            'django.contrib.contenttypes',
             'shop_example',
-            'django.contrib.auth',
-            'django.contrib.sessions',
-            'django.contrib.admin',
-            'django.contrib.sites',
-            'django.contrib.staticfiles', 
             'shop',
             'shop_categories',
             'mptt',
             'treeadmin',
-            'tinymce'
+            'tinymce',
+            'better_test', 
+            'django.contrib.contenttypes',
+            'django.contrib.auth',
+            'django.contrib.sessions',
+            'django.contrib.admin',
+            'django.contrib.sites',
+            'django.contrib.staticfiles'
         ],
         DEBUG=True,
         SITE_ID=1,
