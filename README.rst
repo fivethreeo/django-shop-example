@@ -25,8 +25,8 @@ Linux
     python manage.py syncdb --no-initial-data
     python manage.py syncdb # to load fixtures with natural keys, fails if tables are not present
     python manage.py runserver --insecure
-    
-    # testing
+
+    # testing using django-better-test
     python manage.py help test
 
 Windows
@@ -49,7 +49,7 @@ First make sure PIL is available. Then:
     python manage.py syncdb # to load fixtures with natural keys, fails if tables are not present
     python manage.py runserver --insecure
     
-    # testing
+    # testing using django-better-test
     python manage.py help test
         
 Point your browser to http://127.0.0.1:8000/
