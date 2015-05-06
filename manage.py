@@ -1,6 +1,11 @@
 #!/usr/bin/env python
 
+import os
+from django.utils._os import upath
+
 import app_manage
+
+MEDIA_ROOT=os.path.join(os.path.dirname(upath(__file__)), "media")
 
 if __name__ == '__main__':
     app_manage.main(
@@ -35,5 +40,5 @@ if __name__ == '__main__':
             'shop.shipping.backends.flat_rate.FlatRateShipping'
         ],
         STATIC_ROOT=app_manage.TempDir(),
-        MEDIA_ROOT=app_manage.TempDir()
+        MEDIA_ROOT=os.path.join(os.path.dirname(upath(__file__)), "media")
     )

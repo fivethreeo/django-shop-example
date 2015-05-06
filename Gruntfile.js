@@ -88,12 +88,20 @@
           }
         },
         copy: {
-          main: {
+          glyphicons: {
             expand: true,
             cwd: './bower_components/bootstrap/dist/fonts/',
             src: '**',
             dest: './shop_example/static/shop_example/fonts/',
-            flatten: true
+            flatten: false
+          },
+          
+          examplemedia: {
+            expand: true,
+            cwd: './assets/example/',
+            src: '**',
+            dest: './media/',
+            flatten: false
           }
         }
       });

@@ -13,7 +13,7 @@
       <form method="post" action="{% url 'cart_update' %}">
         {% csrf_token %}
         {{ formset.management_form }}
-        <table border="1">
+        <table class="table table-bordered table-striped">
           <thead>
             <tr>
             <th>{% trans "Product name" %}</th>
