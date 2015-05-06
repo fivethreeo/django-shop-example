@@ -6,9 +6,9 @@
   <h2>Welcome to django SHOP</h2>
 
   <a href="{% url 'cart' %}">Your cart</a><br />
-
   {% if user.is_authenticated %}
     {% trans "Hello" %} {{ user }}
+
     <a href="{% url 'order_list' %}">{% trans "Your orders" %}</a>
   {% endif %}
 {% endblock %}

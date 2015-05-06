@@ -21,6 +21,8 @@ Linux
     npm install grunt-contrib-less --save-dev
     npm install grunt-contrib-uglify --save-dev
     npm install grunt-contrib-watch --save-dev
+    npm install grunt-contrib-copy --save-dev
+
     npm install -g bower
     
     bower install bootstrap -S
@@ -57,6 +59,7 @@ First make sure PIL is available. Then:
     npm install grunt-contrib-less --save-dev
     npm install grunt-contrib-uglify --save-dev
     npm install grunt-contrib-watch --save-dev
+    npm install grunt-contrib-copy --save-dev
     npm install -g bower
     
     bower install bootstrap -S

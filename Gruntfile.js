@@ -29,7 +29,7 @@
         less: {
           development: {
             options: {
-              compress: true,  //minifying the result
+              compress: false,  //minifying the result
             },
             files: {
               //compiling frontend.less into frontend.css
@@ -86,6 +86,15 @@
               livereload: true                        //reloads the browser
             }
           }
+        },
+        copy: {
+          main: {
+            expand: true,
+            cwd: './bower_components/bootstrap/dist/fonts/',
+            src: '**',
+            dest: './shop_example/static/shop_example/fonts/',
+            flatten: true
+          }
         }
       });
 
@@ -95,6 +104,7 @@
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
   // Task definition
   grunt.registerTask('default', ['watch']);
