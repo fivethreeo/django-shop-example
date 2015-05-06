@@ -15,6 +15,16 @@ Linux
     git clone https://github.com/fivethreeo/django-shop-example.git
     cd django-shop-example
     
+    npm init
+    npm install grunt --save-dev 
+    npm install grunt-contrib-concat --save-dev
+    npm install grunt-contrib-less --save-dev
+    npm install grunt-contrib-uglify --save-dev
+    npm install grunt-contrib-watch --save-dev
+    npm install -g bower
+    
+    bower install bootstrap -S
+
     virtualenv shop_env
     
     source ./shop_env/bin/activate
@@ -38,6 +48,16 @@ First make sure PIL is available. Then:
 
     git clone https://github.com/fivethreeo/django-shop-example.git
     cd django-shop-example
+    
+    npm init
+    npm install grunt --save-dev 
+    npm install grunt-contrib-concat --save-dev
+    npm install grunt-contrib-less --save-dev
+    npm install grunt-contrib-uglify --save-dev
+    npm install grunt-contrib-watch --save-dev
+    npm install -g bower
+    
+    bower install bootstrap -S
 
     virtualenv shop_env --system-site-packages
     
