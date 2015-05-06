@@ -23,7 +23,7 @@
               './bower_components/bootstrap/dist/js/bootstrap.js',
               './assets/javascript/backend.js'
             ],
-            dest: './assets/javascript/backend.js',
+            dest: './public/assets/javascript/backend.js',
           }
         },
         less: {
@@ -33,9 +33,9 @@
             },
             files: {
               //compiling frontend.less into frontend.css
-              "./assets/stylesheets/frontend.css":"./assets/stylesheets/frontend.less",
+              "./public/assets/stylesheets/frontend.css":"./assets/less/frontend.less",
               //compiling backend.less into backend.css
-              "./assets/stylesheets/backend.css":"./assets/stylesheets/backend.less"
+              "./public/assets/stylesheets/backend.css":"./assets/less/backend.less"
             }
           }
         },
@@ -45,12 +45,12 @@
           },
           frontend: {
             files: {
-              './assets/javascript/frontend.js': './public/assets/javascript/frontend.js',
+              './public/assets/javascript/frontend.js': './public/assets/javascript/frontend.js',
             }
           },
           backend: {
             files: {
-              './assets/javascript/backend.js': './public/assets/javascript/backend.js',
+              './public/assets/javascript/backend.js': './public/assets/javascript/backend.js',
             }
           }
         },
@@ -80,7 +80,7 @@
             }
           },
           less: {
-            files: ['./assets/stylesheets/*.less'],  //watched files
+            files: ['./assets/less/*.less'],  //watched files
             tasks: ['less'],                          //tasks to run
             options: {
               livereload: true                        //reloads the browser
