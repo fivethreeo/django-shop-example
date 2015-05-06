@@ -1,17 +1,26 @@
 {% extends "shop/base.html" %}
+{% load i18n %}
+{% load url from future %}
+{% block header %}
+  
+   <h1>Shipping and Billing</h1>
+
+{% endblock %}
 
 {% block body %}
-  <h1>Shipping and Billing</h1>
+<div class="col-xs-6 col-lg-12">
+
   <form method="POST">
   {% csrf_token %}
-
   <h3>Your shipping address</h3>
   {{ shipping_address.as_p }}
   <h3>Your billing address</h3>
   {{ billing_address.as_p }}
   <h3>Payment and Shipping Methods</h3>
   {{ billing_shipping_form.as_p }}
-
+  <h3>Extra info</h3>
+  {{ extra_info_form.as_p }}
   <button type="submit">Save</button>
   </form>
+  </div><!--/.col-xs-6.col-lg-4-->
 {% endblock %}

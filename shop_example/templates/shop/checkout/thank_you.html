@@ -1,7 +1,16 @@
 {% extends "shop/base.html" %}
+{% load i18n %}
+{% load url from future %}
+{% block header %}
+  
+  <h1>Thank you for your order!</h1>
+
+{% endblock %}
 
 {% block body %}
-  <h1>Thank you for your order!</h1>
+<div class="col-xs-6 col-lg-12">
+
   <p>Your order has been placed</p>
-  <a href="/">Back to the main page</a>
+  <a href="{% url 'shop_welcome' %}">Back to the main page</a>
+  </div><!--/.col-xs-6.col-lg-4-->
 {% endblock %}

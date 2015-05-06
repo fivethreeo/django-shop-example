@@ -1,13 +1,14 @@
 {% extends "shop/base.html" %}
 
-{% block header %}<h1>Product Info</h1>{% endblock header %}
+{% block header %}  <h1>{{object.get_name}}</h1>
+
+  <p>{{ category }}</p>{% endblock header %}
 
 {% load url from future %}
 
 {% block body %}
-  <p>{{ category }}</p>
+<div class="col-xs-6 col-lg-12">
  
-  <h1>{{object.get_name}}</h1>
   <p>Price: {{object.unit_price}}</p>
   
   {% if object.image %}
@@ -21,4 +22,6 @@
   <input type="hidden" name="add_item_quantity" value="1">
   <input type="submit" value="Add to cart">
   </form>
+  </div><!--/.col-xs-6.col-lg-4-->
+
 {% endblock %}
