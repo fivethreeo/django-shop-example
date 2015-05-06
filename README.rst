@@ -2,7 +2,7 @@
 django-shop-example
 ===================
 
-A django shop example that works on django 1.8
+A django shop example that works on django 1.8 with a own _`branch for grunt/bootstrap`.
 
 How to run
 ----------
@@ -53,3 +53,5 @@ First make sure PIL is available. Then:
     python manage.py help test
         
 Point your browser to http://127.0.0.1:8000/
+
+_`branch for grunt/bootstrap`: https://github.com/fivethreeo/django-shop-example/tree/bootstrap
