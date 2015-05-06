@@ -16,7 +16,8 @@ if __name__ == '__main__':
             'mptt',
             'treeadmin',
             'tinymce',
-            'better_test', 
+            'sorl.thumbnail',
+            'better_test',
             'django.contrib.contenttypes',
             'django.contrib.auth',
             'django.contrib.sessions',
@@ -40,5 +41,9 @@ if __name__ == '__main__':
             'shop.shipping.backends.flat_rate.FlatRateShipping'
         ],
         STATIC_ROOT=app_manage.TempDir(),
-        MEDIA_ROOT=os.path.join(os.path.dirname(upath(__file__)), "media")
+        MEDIA_ROOT=os.path.join(os.path.dirname(upath(__file__)), "media"),
+        MEDIA_URL = "/media/",
+        THUMBNAIL_CACHE = 'django.core.cache.backends.dummy.DummyCache',
+        THUMBNAIL_DEBUG = True
+
     )

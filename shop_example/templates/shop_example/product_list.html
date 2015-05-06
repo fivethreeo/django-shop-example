@@ -1,10 +1,15 @@
 {% extends "shop/base.html" %}
+{% load thumbnail %}
 
 {% block header %}<h1>Products</h1>
  <p>In category: {{ category }}</p>{% endblock header %}
 
 {% block body %}
   {% for object in object_list %}<div class="col-xs-6 col-lg-4">
+              {% thumbnail object.image "300" as im %}{% thumbnail object.image "600" as imx2 %}
+                  <img class="img-responsive img-rounded" src="{{ im.url }}" srcset="{{ imx2.url }} x2">   
+              {% endthumbnail %}{% endthumbnail %}
+
               <h2>{{object.get_name}}</h2>
               <p>price: {{object.unit_price}}</p>
               <p><a class="btn btn-default" href="{{ object.get_absolute_url }}" role="button">View details &raquo;</a></p>

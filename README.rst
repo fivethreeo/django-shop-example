@@ -42,6 +42,12 @@ Linux
 
     # testing using django-better-test
     python manage.py help test
+    
+    # to save the product and category info to a fixture
+    python manage.py dumpdata --natural-foreign --natural-primary -o shop_example/fixtures/initial_data.json shop_example
+    
+    # to keep product images
+    cp media\products\* assets\example\products\
 
 Windows
 =======
@@ -78,5 +84,12 @@ First make sure PIL is available. Then:
     
     # testing using django-better-test
     python manage.py help test
-        
+    
+    # to save the product and category info to a fixture
+    python manage.py dumpdata --natural-foreign --natural-primary -o shop_example\fixtures\initial_data.json shop_example
+    
+    # to keep product images
+    copy media\products\* assets\example\products\
+    
+    
 Point your browser to http://127.0.0.1:8000/

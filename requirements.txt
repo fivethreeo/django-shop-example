@@ -1,6 +1,6 @@
 django
 django-mptt
-easy-thumbnails
+sorl-thumbnail
 django-tinymce
 dj-database-url
 -e git+https://github.com/divio/django-shop.git#egg=django-shop
