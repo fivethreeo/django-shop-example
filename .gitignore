@@ -6,6 +6,8 @@ shop_env/
 bower_components/
 node_modules/
 public/
+shop_example/static/shop_example/javascript
+shop_example/static/shop_example/stylesheets
 
 #################
 ## Eclipse

@@ -15,7 +15,7 @@
               './bower_components/bootstrap/dist/js/bootstrap.js',
               './assets/javascript/frontend.js'
             ],
-            dest: './public/assets/javascript/frontend.js',
+            dest: './shop_example/static/shop_example/javascript/frontend.js',
           },
           js_backend: {
             src: [
@@ -23,7 +23,7 @@
               './bower_components/bootstrap/dist/js/bootstrap.js',
               './assets/javascript/backend.js'
             ],
-            dest: './public/assets/javascript/backend.js',
+            dest: './shop_example/static/shop_example/javascript/backend.js',
           }
         },
         less: {
@@ -33,9 +33,9 @@
             },
             files: {
               //compiling frontend.less into frontend.css
-              "./public/assets/stylesheets/frontend.css":"./assets/less/frontend.less",
+              "./shop_example/static/shop_example/stylesheets/frontend.css":"./assets/less/frontend.less",
               //compiling backend.less into backend.css
-              "./public/assets/stylesheets/backend.css":"./assets/less/backend.less"
+              "./shop_example/static/shop_example/stylesheets/backend.css":"./assets/less/backend.less"
             }
           }
         },
@@ -45,12 +45,12 @@
           },
           frontend: {
             files: {
-              './public/assets/javascript/frontend.js': './public/assets/javascript/frontend.js',
+              './shop_example/static/shop_example/javascript/frontend.js': './shop_example/static/shop_example/javascript/frontend.js',
             }
           },
           backend: {
             files: {
-              './public/assets/javascript/backend.js': './public/assets/javascript/backend.js',
+              './shop_example/static/shop_example/javascript/backend.js': './shop_example/static/shop_example/javascript/backend.js',
             }
           }
         },
