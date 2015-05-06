@@ -1,12 +1,13 @@
 {% extends "shop/base.html" %}
 
-{% block header %}<h1>Products</h1>{% endblock header %}
+{% block header %}<h1>Products</h1>
+ <p>In category: {{ category }}</p>{% endblock header %}
 
 {% block body %}
- <p>In category: {{ category }}</p>
-  {% for object in object_list %}
-  <hr />
-  <p><a href="{{ object.get_absolute_url }}">{{object.get_name}}</a>, price: {{object.unit_price}}</p>
-
+  {% for object in object_list %}<div class="col-xs-6 col-lg-4">
+              <h2>{{object.get_name}}</h2>
+              <p>price: {{object.unit_price}}</p>
+              <p><a class="btn btn-default" href="{{ object.get_absolute_url }}" role="button">View details &raquo;</a></p>
+            </div><!--/.col-xs-6.col-lg-4-->
   {% endfor %}
 {% endblock %}
