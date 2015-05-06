@@ -15,4 +15,4 @@ urlpatterns = patterns('',
     (r'^admin/', include(admin.site.urls)),
     (r'^catalog/', include('shop_categories.urls')),
     (r'^', include('shop.urls')),
-)  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

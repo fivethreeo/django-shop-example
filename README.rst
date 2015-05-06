@@ -27,7 +27,7 @@ Linux
     
     bower install bootstrap -S
 
-    grunt concat less uglify
+    grunt concat less uglify copy
 
     virtualenv shop_env
     
@@ -64,7 +64,7 @@ First make sure PIL is available. Then:
     
     bower install bootstrap -S
 
-    grunt concat less uglify
+    grunt concat less uglify copy
     
     virtualenv shop_env --system-site-packages
     
