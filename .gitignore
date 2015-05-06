@@ -1,13 +1,17 @@
-#################
-## Eclipse
-#################
 
-*.pydevproject
-.project
-.metadata
+*.sqlite
 bin/
 tmp/
 shop_env/
+bower_components/
+node_modules/
+
+#################
+## Eclipse
+#################
+*.pydevproject
+.project
+.metadata
 *.tmp
 *.bak
 *.swp
