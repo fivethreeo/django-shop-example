@@ -41,7 +41,7 @@
         },
         uglify: {
           options: {
-            mangle: false  // Use if you want the names of your functions and variables unchanged
+            mangle: true  // Use if you want the names of your functions and variables unchanged
           },
           frontend: {
             files: {

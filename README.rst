@@ -25,6 +25,8 @@ Linux
     
     bower install bootstrap -S
 
+    grunt concat less uglify
+
     virtualenv shop_env
     
     source ./shop_env/bin/activate
@@ -59,6 +61,8 @@ First make sure PIL is available. Then:
     
     bower install bootstrap -S
 
+    grunt concat less uglify
+    
     virtualenv shop_env --system-site-packages
     
     shop_env\Scripts\activate.bat
