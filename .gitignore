@@ -5,6 +5,7 @@ tmp/
 shop_env/
 bower_components/
 node_modules/
+public/
 
 #################
 ## Eclipse
