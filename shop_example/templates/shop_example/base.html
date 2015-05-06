@@ -81,9 +81,9 @@
         </div><!--/.col-xs-12.col-sm-9-->
 
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
-          <div class="list-group">
+          <div class="">
                             <h2>Categories</h2>
-            <ul class="nav nav-list">
+            <ul class="tree">
             {% load mptt_tags %}
                                 
             {% full_tree_for_model shop_example.Category as categorys %}    
@@ -91,7 +91,7 @@
                 <li>
                     <a href="{{ node.get_absolute_url }}">{{ node.name }}</a>
                     {% if not node.is_leaf_node %}
-                        <ul class="nav nav-list children">
+                        <ul>
                             {{ children }}
                         </ul>
                     {% endif %}
