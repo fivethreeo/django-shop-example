@@ -54,4 +54,4 @@ First make sure PIL is available. Then:
         
 Point your browser to http://127.0.0.1:8000/
 
-_`branch for grunt/bootstrap`: https://github.com/fivethreeo/django-shop-example/tree/bootstrap
+.. _`branch for grunt/bootstrap`: https://github.com/fivethreeo/django-shop-example/tree/bootstrap
