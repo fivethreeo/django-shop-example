@@ -2,7 +2,7 @@
 django-shop-example
 ===================
 
-A django shop example that works on django 1.8
+A django shop example with grunt/bootstrap that works on django 1.8.
 
 How to run
 ----------
