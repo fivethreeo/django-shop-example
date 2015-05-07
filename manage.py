@@ -43,7 +43,6 @@ if __name__ == '__main__':
         STATIC_ROOT=app_manage.TempDir(),
         MEDIA_ROOT=os.path.join(os.path.dirname(upath(__file__)), "media"),
         MEDIA_URL = "/media/",
-        THUMBNAIL_CACHE = 'django.core.cache.backends.dummy.DummyCache',
         THUMBNAIL_DEBUG = True
 
     )
