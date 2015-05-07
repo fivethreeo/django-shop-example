@@ -1,4 +1,5 @@
 {% extends "shop/base.html" %}
+{% load thumbnail %}
 
 {% block header %}  <h1>{{object.get_name}}</h1>
 
@@ -11,9 +12,9 @@
  
   <p>Price: {{object.unit_price}}</p>
   
-  {% if object.image %}
-      <img src="{{object.image.url}}">
-  {% endif %}
+              {% thumbnail object.image "600" as im %}
+                  <img class="img-responsive img-rounded" src="{{ im.url }}">   
+              {% endthumbnail %}
   
   {{object.body|safe}}
 
